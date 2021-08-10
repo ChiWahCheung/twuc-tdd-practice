@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class MommifierTest {
 
     /*
@@ -11,7 +13,7 @@ public class MommifierTest {
      * Then:
      * itself
      */
-
+    Mommifier mommifier = new Mommifier();
     @Test
     void should_create_method() {
         new Mommifier();
@@ -19,6 +21,8 @@ public class MommifierTest {
 
     @Test
     void should_return_empty_string_when_given_empty_string() {
-
+        assertEquals("", mommifier.covert(""));
     }
+
+
 }
