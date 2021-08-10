@@ -24,5 +24,8 @@ public class MommifierTest {
         assertEquals("", mommifier.covert(""));
     }
 
-
+    @Test
+    void should_return_itself_given_not_vowels() {
+        assertEquals("b", mommifier.covert("b"));
+    }
 }
